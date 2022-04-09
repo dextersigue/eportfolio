@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:url(../images/imagebackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.99);
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    font-size: 2rem;
+
+
+    .typing{
+        position: relative;
+        top: 0.4rem;
+        font-size: 3.5rem;
+        color: #6680BA; 
+        
+
+        &::after{
+            content: "";
+            position: absolute;
+            right: -5;
+            width: 3px;
+            height: 90%;
+            border-right: 2px solid white;
+            animation: blink 0.5s infinite ease;
+        }
+    }
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 25rem;
+    top: 11rem;
+    background-color: rgba(67, 114, 18, 1);
+    height: 23%;
+    width: 41%;
+    border-radius: 1rem;
+  
+
+
+    pre{
+        line-height: 1.5rem;
+        color: white;
+        font-size: 1rem;
+        position: relative;
+        right: 3rem;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    .img{
+        border: 1px solid white;
+        border-radius: 0.5rem;
+    }
+}
+
+.btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 13.5rem;
+    gap: 2rem;
+    
+    
+    :hover{
+        color:#6680BA
+    }
+    
+
+    input{
+        padding: 0.7rem;
+        width: 10vw;
+        cursor: pointer;
+        border-radius: 5rem;
+        border: none;
+        font-weight: 600;
+        background-color: rgba(67, 114, 18, 1);
+        color: white;
+    }
+}
+
+.skillwrapper{
+    position: relative;
+    top: 10.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    h2{
+        font-size: 2.3rem;
+        color: #6680BA;
+    }
+
+    .skills{
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    img{
+        width: 4rem;
+        height: 3rem;
+    }
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
