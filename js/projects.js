@@ -1,14 +1,14 @@
-let text1 = ['I am Dexter Sigue', 'A Front-End Developer', 'Aspiring Programmer'];
+let text = ['My Projects and Activities', 'Click the image to view'];
 let count = 0;
 let index = 0;
 let currentText = '';
 let letter = '';
 
 (function type(){
-    if(count === text1.length){
+    if(count === text.length){
         count = 0;
     }
-    currentText = text1[count];
+    currentText = text[count];
     letter = currentText.slice(0, ++index);
 
     document.querySelector('.typing').textContent = letter;
@@ -18,8 +18,3 @@ let letter = '';
     }
     (setTimeout(type, 300));
 }());
-
-
-
-
-

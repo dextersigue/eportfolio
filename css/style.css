@@ -4,12 +4,36 @@
   box-sizing: border-box;
 }
 
-body {
+.bg-img {
   background: url(../images/imagebackground.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.99);
+  background-color: rgba(0, 0, 0, 0.068);
+}
+
+.bg-img1 {
+  background: url(../images/imagebackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200vh;
+  background-color: rgba(0, 0, 0, 0.068);
+}
+
+.bg-img2 {
+  background: url(../images/imagebackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.068);
+}
+
+.imglogo {
+  height: 10rem;
+  width: 15rem;
+  color: white;
+  position: absolute;
+  top: -1rem;
 }
 
 .intro {
@@ -24,6 +48,7 @@ body {
   top: 0.4rem;
   font-size: 3.5rem;
   color: #6680BA;
+  font-family: sans-serif;
 }
 .intro .typing::after {
   content: "";
@@ -51,9 +76,11 @@ body {
   color: white;
   font-size: 1rem;
   position: relative;
-  right: 3rem;
+  right: 5rem;
   font-size: 1.2rem;
   color: white;
+  font-family: Courier;
+  font-weight: 600;
 }
 .wrapper .img {
   border: 1px solid white;
@@ -64,7 +91,7 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  top: 13.5rem;
+  top: 14rem;
   gap: 2rem;
 }
 .btn :hover {
@@ -72,18 +99,25 @@ body {
 }
 .btn input {
   padding: 0.7rem;
-  width: 10vw;
+  width: 12vw;
   cursor: pointer;
   border-radius: 5rem;
   border: none;
   font-weight: 600;
   background-color: rgb(67, 114, 18);
   color: white;
+  font-family: Courier;
+  font-size: 1rem;
+}
+
+.btn1 {
+  position: relative;
+  top: -10rem;
 }
 
 .skillwrapper {
   position: relative;
-  top: 10.5rem;
+  top: 11rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,6 +127,7 @@ body {
 .skillwrapper h2 {
   font-size: 2.3rem;
   color: #6680BA;
+  font-family: sans-serif;
 }
 .skillwrapper .skills {
   display: flex;
@@ -110,4 +145,63 @@ body {
   100% {
     opacity: 1;
   }
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.box {
+  width: 33.3%;
+}
+.box:hover > .hide {
+  display: block;
+  color: rgba(61, 245, 4, 0.886);
+  z-index: 1;
+  position: relative;
+  bottom: 8rem;
+  font-size: 2rem;
+  transition: 1s;
+}
+.box:hover > .hide1 {
+  display: block;
+  color: rgba(61, 245, 4, 0.886);
+  position: relative;
+  bottom: 22rem;
+  z-index: 1;
+  font-size: 2rem;
+  transition: 1s;
+}
+
+.imgproject {
+  width: 70%;
+  height: 80%;
+  transition: 1s;
+}
+.imgproject:hover {
+  transform: scale(1.2);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hide, .hide1 {
+  display: none;
+}
+
+.middle {
+  width: 70%;
+  height: 40%;
+}
+
+.last {
+  width: 70%;
+  height: 80%;
+  position: relative;
+  bottom: 14rem;
+  transition: 1s;
+}
+.last:hover {
+  transform: scale(1.2);
 }
