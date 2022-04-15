@@ -1,4 +1,4 @@
-let text = ['Contact Me'];
+let text = ['Contact Me', 'Send a Message'];
 let count = 0;
 let index = 0;
 let currentText = '';
