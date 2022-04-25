@@ -12,7 +12,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.068);
 }
 
 .bg-img1{
@@ -20,7 +19,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 200vh;
-    background-color: rgba(0, 0, 0, 0.068);
 }
 
 .bg-img2{
@@ -28,7 +26,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 120vh;
-    background-color: rgba(0, 0, 0, 0.068);
+}
+
+.bg-color{
+    height: 100vh;
+    background-color: red;
+}
+
+.bg-color1{
+    height: 200vh;
+    background-color: red;
+}
+
+.bg-color2{
+    height: 120vh;
+    background-color: red;
 }
 
 .imglogo{
@@ -51,7 +63,7 @@
         position: relative;
         top: 0.4rem;
         font-size: 3.5rem;
-        color: #6680BA; 
+        color: green; 
         font-family:sans-serif;
         
 
@@ -73,7 +85,7 @@
     position: absolute;
     left: 25rem;
     top: 11rem;
-    background-color: rgba(67, 114, 18, 1);
+    background: rgba(0, 0, 0, 0.790);
     height: 23%;
     width: 41%;
     border-radius: 1rem;
@@ -105,7 +117,7 @@
     top: 14rem;
     gap: 2rem;
     :hover{
-        color:#6680BA
+        color:rgba(220, 146, 17, 0.886)
     }
     
 
@@ -125,7 +137,7 @@
 
 .btn1{
     position: relative;
-    top: -10rem;
+    top: -12rem;
 }
 
 .btn2{
@@ -144,7 +156,7 @@
 
     h2{
         font-size: 2.3rem;
-        color: #6680BA;
+        color: rgba(220, 146, 17, 0.886);
         font-family: sans-serif;
     }
 
@@ -169,32 +181,38 @@
 }
 
 .container{
-    width:60%;
+    width: 60%;
     margin: 0 auto;
     display: flex; 
     flex-wrap: wrap;
-    text-align: center;
+    text-align: center; 
 }
 
 .box{
     width: 33.3%;
+    transition: 2s;
     &:hover > .hide{
         display: block;
-        color: rgba(61, 245, 4, 0.886);
+        color: rgba(220, 146, 17, 0.886);
         z-index: 1;
         position:relative;
-        bottom: 8rem;
-        font-size: 2rem;
-        transition: 2s
-        
+        bottom: 10rem;
+        font-size: 2.5rem;
+        transition: 2s;
+        font-weight: 600;
+
+        span{
+            display: block;
+        }
     }
+
     &:hover > .hide1{
         display: block;
-        color: rgba(61, 245, 4, 0.886);
+        color: rgba(220, 146, 17, 0.886);;
         position:relative;
         bottom: 22rem;
         z-index: 1;
-        font-size: 2rem;
+        font-size: 2.5rem;
         transition: 2s;
     }
 
@@ -205,16 +223,15 @@
         width: 70%;
         height: 80%;
         transition: 1s;
+        position: inherit;
         &:hover{
            transform: scale(1.2);
-           background-color: rgba(255, 255, 255, 0.1);
         }
     }
 
     .hide, .hide1{
         display: none;
     }
-
 
     .middle{
         width: 70%;
@@ -264,7 +281,7 @@
         margin-top: 30px;
 
         .contactInfo{
-            width: 50%;
+            width: 40%;
             display: flex;
             flex-direction: column;
 
@@ -282,6 +299,8 @@
                     align-items: center;
                     border-radius: 50%;
                     font-size: 22px;
+                    position: relative;
+                    bottom: 1rem;
                 }
 
                 .text{
@@ -293,8 +312,16 @@
 
                     h3{
                         font-weight: 500;
-                        color: #00bcd4;
+                        color: green;
                     }
+
+                    p{
+                        width: 13rem;
+                        text-align: left;
+                        margin-left: 2rem;
+                        font-weight: 600;
+                    }
+
                 }
             }
         }
@@ -303,11 +330,11 @@
 .contactForm{
     width: 40%;
     padding: 40px;
-    background: #fff;
+    background: rgba(0, 0, 0, 0.590);
 
     h2{
         font-size: 30px;
-        color: #333;
+        color: white;
         font-weight: 500;
     }
 
@@ -316,6 +343,7 @@
         width: 100%;
         margin-top: 10px;
 
+      
         input, textarea{
             width: 100%;
             padding: 5px 0;
@@ -346,13 +374,13 @@
 
         }
 
-        .inputBox input[type="submit"]{
+        input[type="submit"]{
             width: 100px;
-            background: #00bcd4;
+            background: green;
             color: #fff;
             border: none;
-            cursor: pointer;
             padding: 10px;
+            cursor: pointer;
         }
     }
 }

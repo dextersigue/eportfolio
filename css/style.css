@@ -11,7 +11,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.068);
 }
 
 .bg-img1 {
@@ -19,7 +18,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 200vh;
-  background-color: rgba(0, 0, 0, 0.068);
 }
 
 .bg-img2 {
@@ -27,7 +25,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 120vh;
-  background-color: rgba(0, 0, 0, 0.068);
+}
+
+.bg-color {
+  height: 100vh;
+  background-color: red;
+}
+
+.bg-color1 {
+  height: 200vh;
+  background-color: red;
+}
+
+.bg-color2 {
+  height: 120vh;
+  background-color: red;
 }
 
 .imglogo {
@@ -49,7 +61,7 @@
   position: relative;
   top: 0.4rem;
   font-size: 3.5rem;
-  color: #6680BA;
+  color: green;
   font-family: sans-serif;
 }
 .intro .typing::after {
@@ -68,7 +80,7 @@
   position: absolute;
   left: 25rem;
   top: 11rem;
-  background-color: rgb(67, 114, 18);
+  background: rgba(0, 0, 0, 0.79);
   height: 23%;
   width: 41%;
   border-radius: 1rem;
@@ -97,7 +109,7 @@
   gap: 2rem;
 }
 .btn :hover {
-  color: #6680BA;
+  color: rgba(220, 146, 17, 0.886);
 }
 .btn input {
   padding: 0.7rem;
@@ -114,7 +126,7 @@
 
 .btn1 {
   position: relative;
-  top: -10rem;
+  top: -12rem;
 }
 
 .btn2 {
@@ -133,7 +145,7 @@
 }
 .skillwrapper h2 {
   font-size: 2.3rem;
-  color: #6680BA;
+  color: rgba(220, 146, 17, 0.886);
   font-family: sans-serif;
 }
 .skillwrapper .skills {
@@ -163,23 +175,28 @@
 
 .box {
   width: 33.3%;
+  transition: 2s;
 }
 .box:hover > .hide {
   display: block;
-  color: rgba(61, 245, 4, 0.886);
+  color: rgba(220, 146, 17, 0.886);
   z-index: 1;
   position: relative;
-  bottom: 8rem;
-  font-size: 2rem;
+  bottom: 10rem;
+  font-size: 2.5rem;
   transition: 2s;
+  font-weight: 600;
+}
+.box:hover > .hide span {
+  display: block;
 }
 .box:hover > .hide1 {
   display: block;
-  color: rgba(61, 245, 4, 0.886);
+  color: rgba(220, 146, 17, 0.886);
   position: relative;
   bottom: 22rem;
   z-index: 1;
-  font-size: 2rem;
+  font-size: 2.5rem;
   transition: 2s;
 }
 
@@ -187,10 +204,10 @@
   width: 70%;
   height: 80%;
   transition: 1s;
+  position: inherit;
 }
 .imgproject:hover {
   transform: scale(1.2);
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .hide, .hide1 {
@@ -242,7 +259,7 @@
   margin-top: 30px;
 }
 .container-con .contactInfo {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
 }
@@ -260,6 +277,8 @@
   align-items: center;
   border-radius: 50%;
   font-size: 22px;
+  position: relative;
+  bottom: 1rem;
 }
 .container-con .contactInfo .box .text {
   display: flex;
@@ -270,17 +289,23 @@
 }
 .container-con .contactInfo .box .text h3 {
   font-weight: 500;
-  color: #00bcd4;
+  color: green;
+}
+.container-con .contactInfo .box .text p {
+  width: 13rem;
+  text-align: left;
+  margin-left: 2rem;
+  font-weight: 600;
 }
 
 .contactForm {
   width: 40%;
   padding: 40px;
-  background: #fff;
+  background: rgba(0, 0, 0, 0.59);
 }
 .contactForm h2 {
   font-size: 30px;
-  color: #333;
+  color: white;
   font-weight: 500;
 }
 .contactForm .inputBox {
@@ -314,13 +339,13 @@
   font-size: 12px;
   transform: translateY(-20px);
 }
-.contactForm .inputBox .inputBox input[type=submit] {
+.contactForm .inputBox input[type=submit] {
   width: 100px;
-  background: #00bcd4;
+  background: green;
   color: #fff;
   border: none;
-  cursor: pointer;
   padding: 10px;
+  cursor: pointer;
 }
 
 @media (max-width: 991px) {
