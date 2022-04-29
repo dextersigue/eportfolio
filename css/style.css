@@ -96,6 +96,12 @@
   font-family: Courier;
   font-weight: 600;
 }
+
+.container-con .contactInfo .box .text .ralign {
+  position: relative;
+  right: 1rem;
+}
+
 .wrapper .img {
   border: 1px solid white;
   border-radius: 0.5rem;
